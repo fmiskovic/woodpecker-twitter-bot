@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cbff7997-43b1-4b3b-935c-a4638c3379d5" name="Default Changelist" comment="fix flask version" />
+    <list default="true" id="cbff7997-43b1-4b3b-935c-a4638c3379d5" name="Default Changelist" comment="fix flask version">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/news/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/news/logging.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/news/news_api_auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/news_api_auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/news/news_grabber.py" beforeDir="false" afterPath="$PROJECT_DIR$/news_grabber.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/news/news_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/news_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/twitter/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/twitter/followers.py" beforeDir="false" afterPath="$PROJECT_DIR$/followers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/twitter/logging.config" beforeDir="false" afterPath="$PROJECT_DIR$/test/logging.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/twitter/tweets.py" beforeDir="false" afterPath="$PROJECT_DIR$/tweets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/twitter/twitter_api_auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/twitter_api_auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/news/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/news/logging.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/news/test_news_grabber.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_news_grabber.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/twitter/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/twitter/logging.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/twitter/test_twitter_post.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_twitter_post.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +58,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -82,7 +103,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test_news_grabber.NewsGrabberTestCases" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for test.test_news_grabber.NewsGrabberTestCases" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="beehive" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -93,11 +114,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_news_grabber.NewsGrabberTestCases&quot;" />
+      <option name="_new_target" value="&quot;test.test_news_grabber.NewsGrabberTestCases&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test_news_grabber.NewsGrabberTestCases.test_get_bitcoin_news" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for test.test_news_grabber.NewsGrabberTestCases.test_get_bitcoin_news" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="beehive" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -108,11 +129,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_news_grabber.NewsGrabberTestCases.test_get_bitcoin_news&quot;" />
+      <option name="_new_target" value="&quot;test.test_news_grabber.NewsGrabberTestCases.test_get_bitcoin_news&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test_news_grabber.NewsGrabberTestCases.test_get_crypto_news" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for test.test_news_grabber.NewsGrabberTestCases.test_get_crypto_news" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="beehive" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -123,11 +144,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_news_grabber.NewsGrabberTestCases.test_get_crypto_news&quot;" />
+      <option name="_new_target" value="&quot;test.test_news_grabber.NewsGrabberTestCases.test_get_crypto_news&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test_twitter_post.TwitterPostBotTestCases.test_get_tweets_list" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for test.test_twitter_post.TwitterPostBotTestCases.test_get_tweets_list" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="beehive" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -138,17 +159,17 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_twitter_post.TwitterPostBotTestCases.test_get_tweets_list&quot;" />
+      <option name="_new_target" value="&quot;test.test_twitter_post.TwitterPostBotTestCases.test_get_tweets_list&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.bot" />
-        <item itemvalue="Python tests.Unittests for test_twitter_post.TwitterPostBotTestCases.test_get_tweets_list" />
-        <item itemvalue="Python tests.Unittests for test_news_grabber.NewsGrabberTestCases.test_get_crypto_news" />
-        <item itemvalue="Python tests.Unittests for test_news_grabber.NewsGrabberTestCases" />
-        <item itemvalue="Python tests.Unittests for test_news_grabber.NewsGrabberTestCases.test_get_bitcoin_news" />
+        <item itemvalue="Python tests.Unittests for test.test_twitter_post.TwitterPostBotTestCases.test_get_tweets_list" />
+        <item itemvalue="Python tests.Unittests for test.test_news_grabber.NewsGrabberTestCases.test_get_crypto_news" />
+        <item itemvalue="Python tests.Unittests for test.test_news_grabber.NewsGrabberTestCases" />
+        <item itemvalue="Python tests.Unittests for test.test_news_grabber.NewsGrabberTestCases.test_get_bitcoin_news" />
       </list>
     </recent_temporary>
   </component>
@@ -167,7 +188,7 @@
       <workItem from="1566904902111" duration="440000" />
       <workItem from="1566905496541" duration="7042000" />
       <workItem from="1567081249384" duration="80000" />
-      <workItem from="1567081339120" duration="9259000" />
+      <workItem from="1567081339120" duration="9663000" />
     </task>
     <servers />
   </component>
@@ -193,7 +214,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/news/news_grabber.py</url>
+          <url>file://$PROJECT_DIR$/news_grabber.py</url>
           <line>18</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>

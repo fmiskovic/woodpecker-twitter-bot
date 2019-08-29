@@ -1,11 +1,11 @@
 import logging.config
 import time
 
-from src.news import news_api_auth
-from src.news import news_grabber
-from src.twitter import followers
-from src.twitter import tweets
-from src.twitter import twitter_api_auth
+import news_api_auth
+import news_grabber
+import followers
+import tweets
+import twitter_api_auth
 
 INTERVAL = 60 * 60 * 6  # tweet every 6 hours
 

@@ -1,8 +1,8 @@
 import unittest
 
-from src.twitter import tweets
-from src.twitter import twitter_api_auth
-from src.twitter.tweets import TweetsHandler
+import tweets
+import twitter_api_auth
+from tweets import TweetsHandler
 
 
 class TwitterPostBotTestCases(unittest.TestCase):

@@ -1,7 +1,7 @@
 import unittest
 
-from src.news import news_api_auth
-from src.news.news_grabber import NewsGrabber
+import news_api_auth
+from news_grabber import NewsGrabber
 
 
 class NewsGrabberTestCases(unittest.TestCase):
