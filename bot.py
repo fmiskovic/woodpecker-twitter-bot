@@ -24,6 +24,7 @@ def tweet_something_about(keyword):
     news = news_grabber.get_news(keyword)
     if len(news) == 0:
         return
+    logger.info('Tweeting about ' + keyword)
     for n in news:
         tw_handler.post_new_tweet(n.title, n.url)
 
@@ -44,4 +45,5 @@ while True:
     # check for ethereum news and tweet about it
     tweet_something_about('ethereum')
 
+    logger.info('going to sleep now...')
     time.sleep(INTERVAL)
