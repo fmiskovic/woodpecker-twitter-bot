@@ -1,7 +1,7 @@
 import logging.config
 import os
 
-from newsapi.newsapi_client import NewsApiClient
+import newsapi
 
 logging.config.fileConfig('logging.config')
 logger = logging.getLogger(__name__)
@@ -10,4 +10,4 @@ logger = logging.getLogger(__name__)
 def create_api():
     """authenticate to newsapi.org and get NewsApiClient"""
     logger.info('creating News API client...')
-    return NewsApiClient(api_key=os.getenv('NEWS_API_KEY'))
+    return newsapi.newsapi_client.NewsApiClient(api_key=os.getenv('NEWS_API_KEY'))
