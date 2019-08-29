@@ -6,7 +6,7 @@ logger = logging.getLogger(__name__)
 
 def create_post(text, source):
     logger.info('Creating twitter post text...')
-    return text + '\n\n' + '#cryptocurrencynews #cryptocurrency #blockchain #bitcoin' \
+    return text + '\n\n' + '#cryptocurrencynews #cryptocurrency #blockchain #bitcoin ' \
                            '#crypto #btc #ltc #ethereum #litecoin' + '\n\n' + source
 
 

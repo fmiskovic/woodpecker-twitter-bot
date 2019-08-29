@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cbff7997-43b1-4b3b-935c-a4638c3379d5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/runtime.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    <list default="true" id="cbff7997-43b1-4b3b-935c-a4638c3379d5" name="Default Changelist" comment="fix flask version">
+      <change beforePath="$PROJECT_DIR$/src/twitter/tweets.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/twitter/tweets.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +28,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/bots" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -172,7 +169,7 @@
       <workItem from="1566904902111" duration="440000" />
       <workItem from="1566905496541" duration="7042000" />
       <workItem from="1567081249384" duration="80000" />
-      <workItem from="1567081339120" duration="7522000" />
+      <workItem from="1567081339120" duration="7852000" />
     </task>
     <servers />
   </component>
@@ -189,6 +186,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fix flask version" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix flask version" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
