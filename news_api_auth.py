@@ -1,7 +1,7 @@
 import logging.config
 import os
 
-from newsapi import NewsApiClient
+from fork_newsapi_client import NewsApiClient
 
 logging.config.fileConfig('logging.config')
 logger = logging.getLogger(__name__)
