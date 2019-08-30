@@ -7,7 +7,7 @@ import followers
 import tweets
 import twitter_api_auth
 
-INTERVAL = 60 * 60 * 6  # tweet every 6 hours
+INTERVAL = 60 * 60 * 2  # tweet every 2 hours
 
 logging.config.fileConfig('logging.config')
 logger = logging.getLogger(__name__)
