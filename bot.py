@@ -23,10 +23,12 @@ followers_handler = followers.FollowersHandler(tw_api)
 def tweet_something_about(keyword):
     news = news_grabber.get_news(keyword)
     if len(news) == 0:
-        return
+        return False
     logger.info('Tweeting about ' + keyword)
-    for n in news:
-        tw_handler.post_new_tweet(n.title, n.url)
+    tw_handler.post_new_tweet(news[0].title, news[0].url)
+    # for n in news:
+    #  tw_handler.post_new_tweet(n.title, n.url)
+    return True
 
 
 while True:
@@ -34,16 +36,19 @@ while True:
     followers_handler.follow_followers()
 
     # check for bitcoin news and tweet about it
-    tweet_something_about('bitcoin')
+    tweeted = tweet_something_about('bitcoin')
 
-    # check for cryptocurrency news and tweet about it
-    tweet_something_about('cryptocurrency')
+    if not tweeted:
+        # check for cryptocurrency news and tweet about it
+        tweeted = tweet_something_about('cryptocurrency')
 
-    # check for litecoin news and tweet about it
-    tweet_something_about('litecoin')
+    if not tweeted:
+        # check for litecoin news and tweet about it
+        tweeted = tweet_something_about('litecoin')
 
-    # check for ethereum news and tweet about it
-    tweet_something_about('ethereum')
+    if not tweeted:
+        # check for ethereum news and tweet about it
+        tweet_something_about('blockchain')
 
     logger.info('going to sleep now...')
     time.sleep(INTERVAL)
