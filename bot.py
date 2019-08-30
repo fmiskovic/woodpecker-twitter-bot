@@ -1,9 +1,9 @@
 import logging.config
 import time
 
+import followers
 import news_api_auth
 import news_grabber
-import followers
 import tweets
 import twitter_api_auth
 
