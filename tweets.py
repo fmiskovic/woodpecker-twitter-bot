@@ -34,7 +34,7 @@ class TweetsHandler:
         try:
             return self.api.update_status(text)
         except Exception as e:
-            logger.error('Failed to post new tweet', e)
+            logger.error('Failed to post new tweet: %s', e, exc_info=1)
 
     def get_latest_tweet(self):
         logger.info('Getting my last tweet...')

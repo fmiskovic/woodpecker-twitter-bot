@@ -4,8 +4,6 @@
     <list default="true" id="cbff7997-43b1-4b3b-935c-a4638c3379d5" name="Default Changelist" comment="fix flask version">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/followers.py" beforeDir="false" afterPath="$PROJECT_DIR$/followers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news_grabber.py" beforeDir="false" afterPath="$PROJECT_DIR$/news_grabber.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tweets.py" beforeDir="false" afterPath="$PROJECT_DIR$/tweets.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -180,7 +178,7 @@
       <workItem from="1567107344702" duration="16000" />
       <workItem from="1567159260048" duration="2463000" />
       <workItem from="1567334912664" duration="4038000" />
-      <workItem from="1567347661955" duration="242000" />
+      <workItem from="1567347661955" duration="1037000" />
     </task>
     <servers />
   </component>
