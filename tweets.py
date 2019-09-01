@@ -3,7 +3,7 @@ import logging.config
 import tweet_similarity
 
 logging.config.fileConfig('logging.config')
-logger = logging.getLogger(__name__)
+logger = logging.getLogger('bot')
 
 
 def create_post(text, source):

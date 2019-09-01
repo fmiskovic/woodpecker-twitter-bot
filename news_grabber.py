@@ -3,7 +3,7 @@ import logging.config
 from news_model import News
 
 logging.config.fileConfig('logging.config')
-logger = logging.getLogger(__name__)
+logger = logging.getLogger('bot')
 
 
 class NewsGrabber:

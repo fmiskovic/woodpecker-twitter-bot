@@ -3,7 +3,7 @@ import logging
 import tweepy
 
 logging.config.fileConfig('logging.config')
-logger = logging.getLogger(__name__)
+logger = logging.getLogger('bot')
 
 
 class FollowersHandler:
