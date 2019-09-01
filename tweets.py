@@ -26,7 +26,7 @@ class TweetsHandler:
         text = create_post(text, source)
         if len(latest_tweets) > 0:
             for t in latest_tweets:
-                if tweet_similarity.are_similar(t, text):
+                if tweet_similarity.are_similar(t.text, text):
                     logger.info('You already tweeted this. I do not want to tweet duplicate.')
                     return None
 
