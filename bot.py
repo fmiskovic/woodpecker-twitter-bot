@@ -10,14 +10,14 @@ import twitter_api_auth
 INTERVAL = 60 * 30  # tweet every 30 minutes
 
 logging.config.fileConfig('logging.config')
-logger = logging.getLogger(__name__)
+logger = logging.getLogger('bot')
 
 news_api = news_api_auth.create_api()
-news_grabber = news_grabber.NewsGrabber(news_api)
+news_grabber = news_grabber.NewsGrabber(news_api, logger)
 
 tw_api = twitter_api_auth.create_api()
-tw_handler = tweets.TweetsHandler(tw_api)
-followers_handler = followers.FollowersHandler(tw_api)
+tw_handler = tweets.TweetsHandler(tw_api, logger)
+followers_handler = followers.FollowersHandler(tw_api, logger)
 
 
 def tweet_something_about(keyword):
@@ -28,6 +28,7 @@ def tweet_something_about(keyword):
     # tw_handler.post_new_tweet(news[0].title, news[0].url)
     for n in news:
         tw_handler.post_new_tweet(n.title, n.url)
+        logging.info('Taking a break...')
         time.sleep(120)
 
 
@@ -43,3 +44,4 @@ while True:
 
     logger.info('going to sleep now...')
     time.sleep(INTERVAL)
+    logger.info('OK I wake up. Lets tweet something')

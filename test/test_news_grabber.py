@@ -1,13 +1,17 @@
+import logging.config
 import unittest
 
 import news_api_auth
 from news_grabber import NewsGrabber
 
+logging.config.fileConfig('logging.config')
+logger = logging.getLogger('bot')
+
 
 class NewsGrabberTestCases(unittest.TestCase):
     def setUp(self):
         api = news_api_auth.create_api()
-        self.grabber = NewsGrabber(api)
+        self.grabber = NewsGrabber(api, logging)
 
     def tearDown(self) -> None:
         super().tearDown()
