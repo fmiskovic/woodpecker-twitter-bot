@@ -1,5 +1,7 @@
 import logging.config
 
+import tweet_similarity
+
 logging.config.fileConfig('logging.config')
 logger = logging.getLogger(__name__)
 
@@ -20,16 +22,19 @@ class TweetsHandler:
 
     def post_new_tweet(self, text, source):
         """Tweet some news"""
-        latest_tweets = self.get_tweets_list(20)
+        latest_tweets = self.get_tweets_list(100)
         text = create_post(text, source)
         if len(latest_tweets) > 0:
             for t in latest_tweets:
-                if text == t.text:
+                if tweet_similarity.are_similar(t, text):
                     logger.info('You already tweeted this. I do not want to tweet duplicate.')
                     return None
 
         logger.info('Posting a new tweet...')
-        return self.api.update_status(text)
+        try:
+            return self.api.update_status(text)
+        except Exception as e:
+            logger.error('Failed to post new tweet', e)
 
     def get_latest_tweet(self):
         logger.info('Getting my last tweet...')
