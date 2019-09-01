@@ -28,7 +28,7 @@ def tweet_something_about(keyword):
     # tw_handler.post_new_tweet(news[0].title, news[0].url)
     for n in news:
         tw_handler.post_new_tweet(n.title, n.url)
-        time.sleep(1000)
+        time.sleep(120)
 
 
 while True:
@@ -39,7 +39,7 @@ while True:
     tweet_something_about('bitcoin')
 
     # check for cryptocurrency news and tweet about it
-    tweeted = tweet_something_about('cryptocurrency')
+    tweet_something_about('cryptocurrency')
 
     logger.info('going to sleep now...')
     time.sleep(INTERVAL)
