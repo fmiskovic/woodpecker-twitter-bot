@@ -7,7 +7,7 @@ import news_grabber
 import tweets
 import twitter_api_auth
 
-INTERVAL = 60 * 30  # tweet every 30 minutes
+INTERVAL = 60 * 5  # sleep time interval is 5 minutes
 
 logging.config.fileConfig('logging.config')
 logger = logging.getLogger('bot')
@@ -28,8 +28,9 @@ def tweet_something_about(keyword):
     # tw_handler.post_new_tweet(news[0].title, news[0].url)
     for n in news:
         tw_handler.post_new_tweet(n.title, n.url)
-        logging.info('Taking a break...')
-        time.sleep(120)
+        logging.info('Taking a nap break...')
+        time.sleep(INTERVAL)
+        logger.info('OK I am ready to continue. Lets tweet something')
 
 
 while True:
@@ -41,7 +42,3 @@ while True:
 
     # check for cryptocurrency news and tweet about it
     tweet_something_about('cryptocurrency')
-
-    logger.info('going to sleep now...')
-    time.sleep(INTERVAL)
-    logger.info('OK I wake up. Lets tweet something')
