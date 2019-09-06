@@ -3,6 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="cbff7997-43b1-4b3b-935c-a4638c3379d5" name="Default Changelist" comment="fix flask version">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/followers.py" beforeDir="false" afterPath="$PROJECT_DIR$/twitter/followers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fork_const.py" beforeDir="false" afterPath="$PROJECT_DIR$/news/fork_const.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fork_newsapi_auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/news/fork_newsapi_auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fork_newsapi_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/news/fork_newsapi_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fork_newsapi_exception.py" beforeDir="false" afterPath="$PROJECT_DIR$/news/fork_newsapi_exception.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news_api_auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/news/news_api_auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news_grabber.py" beforeDir="false" afterPath="$PROJECT_DIR$/news/news_grabber.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/news/news_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_news_grabber.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_news_grabber.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_tweet_similarity.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_tweet_similarity.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_twitter_post.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_twitter_post.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweet_similarity.py" beforeDir="false" afterPath="$PROJECT_DIR$/twitter/tweet_similarity.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweets.py" beforeDir="false" afterPath="$PROJECT_DIR$/twitter/tweets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/twitter_api_auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/twitter/twitter_api_auth.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,8 +42,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="Python Unit Test" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -53,15 +68,17 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/test" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/bots" />
       <recent name="$PROJECT_DIR$/test/twitter" />
       <recent name="$PROJECT_DIR$/test/news" />
       <recent name="$PROJECT_DIR$/src/twitter" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/news" />
+      <recent name="$PROJECT_DIR$/twitter" />
+      <recent name="$PROJECT_DIR$/test" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -76,7 +93,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.bot">
+  <component name="RunManager" selected="Python tests.Unittests for test_twitter_post.TwitterPostBotTestCases.test_get_latest_tweet_url">
     <configuration name="bot" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="beehive" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -99,7 +116,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test_news_grabber.NewsGrabberTestCases" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for test_news_grabber.NewsGrabberTestCases.test_get_crypto_news" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="beehive" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -110,26 +127,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_news_grabber.NewsGrabberTestCases&quot;" />
+      <option name="_new_target" value="&quot;test_news_grabber.NewsGrabberTestCases.test_get_crypto_news&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test.test_twitter_post.TwitterPostBotTestCases.test_get_tweets_list" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="beehive" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test/twitter" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test.test_twitter_post.TwitterPostBotTestCases.test_get_tweets_list&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for test_tweet_similarity.MyTestCase.test_are_similar" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for test_news_grabber.NewsGrabberTestCases.test_get_crypto_tech_news" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="beehive" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -140,11 +142,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_tweet_similarity.MyTestCase.test_are_similar&quot;" />
+      <option name="_new_target" value="&quot;test_news_grabber.NewsGrabberTestCases.test_get_crypto_tech_news&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test_tweet_similarity.MyTestCase.test_are_similar_not_similar" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for test_twitter_post.TwitterPostBotTestCases.test_get_latest_tweet_url" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="beehive" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -155,17 +157,32 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_tweet_similarity.MyTestCase.test_are_similar_not_similar&quot;" />
+      <option name="_new_target" value="&quot;test_twitter_post.TwitterPostBotTestCases.test_get_latest_tweet_url&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for test_twitter_post.TwitterPostBotTestCases.test_get_tweets_list" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="beehive" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_twitter_post.TwitterPostBotTestCases.test_get_tweets_list&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests for test_twitter_post.TwitterPostBotTestCases.test_get_latest_tweet_url" />
+        <item itemvalue="Python tests.Unittests for test_twitter_post.TwitterPostBotTestCases.test_get_tweets_list" />
+        <item itemvalue="Python tests.Unittests for test_news_grabber.NewsGrabberTestCases.test_get_crypto_news" />
+        <item itemvalue="Python tests.Unittests for test_news_grabber.NewsGrabberTestCases.test_get_crypto_tech_news" />
         <item itemvalue="Python.bot" />
-        <item itemvalue="Python tests.Unittests for test_tweet_similarity.MyTestCase.test_are_similar_not_similar" />
-        <item itemvalue="Python tests.Unittests for test_tweet_similarity.MyTestCase.test_are_similar" />
-        <item itemvalue="Python tests.Unittests for test_news_grabber.NewsGrabberTestCases" />
-        <item itemvalue="Python tests.Unittests for test.test_twitter_post.TwitterPostBotTestCases.test_get_tweets_list" />
       </list>
     </recent_temporary>
   </component>
@@ -191,6 +208,8 @@
       <workItem from="1567159260048" duration="2463000" />
       <workItem from="1567334912664" duration="4038000" />
       <workItem from="1567347661955" duration="2225000" />
+      <workItem from="1567354628762" duration="427000" />
+      <workItem from="1567773041632" duration="6477000" />
     </task>
     <servers />
   </component>
@@ -218,23 +237,30 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tweet_similarity.py</url>
+          <url>file://$PROJECT_DIR$/twitter/tweet_similarity.py</url>
           <line>6</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test/test_twitter_post.py</url>
+          <line>52</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/beehive$Unittests_for_test_twitter_post_TwitterPostBotTestCases_test_get_latest_tweet_url.coverage" NAME="Unittests for test_twitter_post.TwitterPostBotTestCases.test_get_latest_tweet_url Coverage Results" MODIFIED="1567779673789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/beehive$Unittests_for_test_news_grabber_MyTestCase.coverage" NAME="Unittests for test_news_grabber.MyTestCase Coverage Results" MODIFIED="1566909234698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/news" />
     <SUITE FILE_PATH="coverage/beehive$Unittests_for_test_news_grabber_NewsGrabberTestCases_test_get_bitcoin_news.coverage" NAME="Unittests for test_news_grabber.NewsGrabberTestCases.test_get_bitcoin_news Coverage Results" MODIFIED="1567083978808" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/news" />
     <SUITE FILE_PATH="coverage/beehive$Unittests_for_test_tweet_similarity_MyTestCase_test_are_similar.coverage" NAME="Unittests for test_tweet_similarity.MyTestCase.test_are_similar Coverage Results" MODIFIED="1567338613891" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/beehive$bot.coverage" NAME="bot Coverage Results" MODIFIED="1567339843794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/beehive$Unittests_for_test_twitter_post_bot_TwitterPostBotTestCases_test_create_post.coverage" NAME="Unittests for test_twitter_post_bot.TwitterPostBotTestCases.test_create_post Coverage Results" MODIFIED="1566911716778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/twitter" />
     <SUITE FILE_PATH="coverage/beehive$Unittests_for_test_news_grabber_NewsGrabberTestCases.coverage" NAME="Unittests for test_news_grabber.NewsGrabberTestCases Coverage Results" MODIFIED="1567106874974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/beehive$Unittests_for_test_news_grabber_NewsGrabberTestCases_test_get_crypto_tech_news.coverage" NAME="Unittests for test_news_grabber.NewsGrabberTestCases.test_get_crypto_tech_news Coverage Results" MODIFIED="1567776454463" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/beehive$Unittests_for_test_news_grabber_NewsGrabberTestCases_test_get_news.coverage" NAME="Unittests for test_news_grabber.NewsGrabberTestCases.test_get_news Coverage Results" MODIFIED="1566909568881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/news" />
-    <SUITE FILE_PATH="coverage/beehive$Unittests_for_test_twitter_post_TwitterPostBotTestCases_test_get_tweets_list.coverage" NAME="Unittests for test_twitter_post.TwitterPostBotTestCases.test_get_tweets_list Coverage Results" MODIFIED="1567086338284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/twitter" />
-    <SUITE FILE_PATH="coverage/beehive$Unittests_for_test_news_grabber_NewsGrabberTestCases_test_get_crypto_news.coverage" NAME="Unittests for test_news_grabber.NewsGrabberTestCases.test_get_crypto_news Coverage Results" MODIFIED="1567084382625" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/news" />
+    <SUITE FILE_PATH="coverage/beehive$Unittests_for_test_twitter_post_TwitterPostBotTestCases_test_get_tweets_list.coverage" NAME="Unittests for test_twitter_post.TwitterPostBotTestCases.test_get_tweets_list Coverage Results" MODIFIED="1567777537433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/beehive$Unittests_for_test_news_grabber_NewsGrabberTestCases_test_get_crypto_news.coverage" NAME="Unittests for test_news_grabber.NewsGrabberTestCases.test_get_crypto_news Coverage Results" MODIFIED="1567776519595" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/beehive$Unittests_for_test_tweet_similarity_MyTestCase_test_are_similar_not_similar.coverage" NAME="Unittests for test_tweet_similarity.MyTestCase.test_are_similar_not_similar Coverage Results" MODIFIED="1567339598218" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
   </component>
 </project>

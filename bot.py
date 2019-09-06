@@ -1,11 +1,8 @@
 import logging.config
 import time
 
-import followers
-import news_api_auth
-import news_grabber
-import tweets
-import twitter_api_auth
+from twitter import followers, tweets, twitter_api_auth
+from news import news_grabber, news_api_auth
 
 INTERVAL = 60 * 5  # sleep time interval is 5 minutes
 
@@ -27,7 +24,7 @@ def tweet_something_about(keyword):
     logger.info('Tweeting about ' + keyword)
     # tw_handler.post_new_tweet(news[0].title, news[0].url)
     for n in news:
-        tw_handler.post_new_tweet(n.title, n.url)
+        tw_handler.post_new_tweet(n.description, n.url)
         logging.info('Taking a nap break...')
         time.sleep(INTERVAL)
         logger.info('OK I am ready to continue. Lets tweet something')

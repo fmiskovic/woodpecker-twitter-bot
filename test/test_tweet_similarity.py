@@ -1,6 +1,6 @@
 import unittest
 
-import tweet_similarity
+from twitter import tweet_similarity
 
 
 class MyTestCase(unittest.TestCase):

@@ -1,9 +1,8 @@
 import logging.config
 import unittest
 
-import tweets
-import twitter_api_auth
-from tweets import TweetsHandler
+from twitter import tweets, twitter_api_auth
+from twitter.tweets import TweetsHandler
 
 logging.config.fileConfig('logging.config')
 logger = logging.getLogger('bot')
@@ -35,6 +34,18 @@ class TwitterPostBotTestCases(unittest.TestCase):
         tweet = self.post_bot.get_latest_tweet()
         self.assertIsNotNone(tweet, msg='You did not get anything')
         self.assertIsNotNone(tweet.text)
+
+    def test_get_latest_tweet_url(self):
+        tweet = self.post_bot.get_latest_tweet()
+        self.assertIsNotNone(tweet, msg='You did not get anything')
+        self.assertIsNotNone(tweet.text)
+
+        text = tweet.text
+
+        sub = text[0:text.find('\n\n')]
+        logger.info(f'Substring is: %s', sub)
+        self.assertIsNotNone(sub)
+        self.assertTrue(len(sub) > 0)
 
     def test_get_tweets_list(self):
         tweet_list = self.post_bot.get_tweets_list(20)

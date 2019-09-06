@@ -3,9 +3,9 @@ from sys import version_info
 import requests
 from requests.compat import basestring
 
-import fork_const
-from fork_newsapi_auth import NewsApiAuth
-from fork_newsapi_exception import NewsAPIException
+from news import fork_const
+from news.fork_newsapi_auth import NewsApiAuth
+from news.fork_newsapi_exception import NewsAPIException
 
 
 class NewsApiClient(object):

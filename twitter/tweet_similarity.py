@@ -6,3 +6,8 @@ similarity_threshold = 0.7
 def are_similar(t1, t2):
     ratio = SequenceMatcher(None, t1, t2).ratio()
     return ratio > similarity_threshold
+
+
+def are_similar_text(t1, t2):
+    sub1 = t1[0:t1.find('\n\n')]
+    return sub1 == t2

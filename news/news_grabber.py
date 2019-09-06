@@ -1,4 +1,4 @@
-from news_model import News
+from news.news_model import News
 
 
 class NewsGrabber:
@@ -10,10 +10,10 @@ class NewsGrabber:
         self.news_api = news_api
         logger.info('Initialized NewsApiClient...')
 
-    def get_news(self, query):
+    def get_news(self, query, category=None):
         """get latest breaking news"""
         news = []
-        response = self.news_api.get_top_headlines(query)
+        response = self.news_api.get_top_headlines(query, category=category)
         if response['status'] == 'ok':
             self.logger.info('Querying news went ok')
             for article in response['articles']:

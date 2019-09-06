@@ -1,4 +1,4 @@
-import tweet_similarity
+from twitter import tweet_similarity
 
 
 def create_post(text, source):
@@ -18,16 +18,15 @@ class TweetsHandler:
     def post_new_tweet(self, text, source):
         """Tweet some news"""
         latest_tweets = self.get_tweets_list(100)
-        text = create_post(text, source)
         if len(latest_tweets) > 0:
             for t in latest_tweets:
-                if tweet_similarity.are_similar(t.text, text):
+                if tweet_similarity.are_similar_text(t.text, text):
                     self.logger.info('You already tweeted this. I do not want to tweet duplicate.')
                     return None
 
-        self.logger.info('Posting a new tweet...')
         try:
-            return self.api.update_status(text)
+            self.logger.info('Posting a new tweet...')
+            return self.api.update_status(create_post(text, source))
         except Exception as e:
             self.logger.error('Failed to post new tweet: %s', e, exc_info=1)
 

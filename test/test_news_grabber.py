@@ -1,8 +1,8 @@
 import logging.config
 import unittest
 
-import news_api_auth
-from news_grabber import NewsGrabber
+from news import news_api_auth
+from news.news_grabber import NewsGrabber
 
 logging.config.fileConfig('logging.config')
 logger = logging.getLogger('bot')
@@ -18,6 +18,13 @@ class NewsGrabberTestCases(unittest.TestCase):
 
     def test_get_crypto_news(self):
         news = self.grabber.get_news('cryptocurrency')
+        print('crypto')
+        for n in news:
+            print(n)
+        self.assertTrue(len(news) > 0)
+
+    def test_get_crypto_tech_news(self):
+        news = self.grabber.get_news('cryptocurrency', category='technology')
         print('crypto')
         for n in news:
             print(n)
