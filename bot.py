@@ -1,8 +1,8 @@
 import logging.config
 import time
 
-from twitter import followers, tweets, twitter_api_auth
 from news import news_grabber, news_api_auth
+from twitter import followers, tweets, twitter_api_auth
 
 INTERVAL = 60 * 5  # sleep time interval is 5 minutes
 
@@ -34,8 +34,17 @@ while True:
     # follow new followers
     followers_handler.follow_followers()
 
+    # check for cryptocurrency news and tweet about it
+    tweet_something_about('cryptocurrency')
+
     # check for bitcoin news and tweet about it
     tweet_something_about('bitcoin')
 
-    # check for cryptocurrency news and tweet about it
-    tweet_something_about('cryptocurrency')
+    # check for ethereum news and tweet about it
+    tweet_something_about('ethereum')
+
+    # check for litecoin news and tweet about it
+    tweet_something_about('litecoin')
+
+    # check for ripple news and tweet about it
+    tweet_something_about('ripple')
