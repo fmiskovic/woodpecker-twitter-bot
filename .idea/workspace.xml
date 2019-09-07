@@ -3,21 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cbff7997-43b1-4b3b-935c-a4638c3379d5" name="Default Changelist" comment="fix flask version">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/followers.py" beforeDir="false" afterPath="$PROJECT_DIR$/twitter/followers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fork_const.py" beforeDir="false" afterPath="$PROJECT_DIR$/news/fork_const.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fork_newsapi_auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/news/fork_newsapi_auth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fork_newsapi_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/news/fork_newsapi_client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fork_newsapi_exception.py" beforeDir="false" afterPath="$PROJECT_DIR$/news/fork_newsapi_exception.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news_api_auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/news/news_api_auth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news_grabber.py" beforeDir="false" afterPath="$PROJECT_DIR$/news/news_grabber.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/news/news_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_news_grabber.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_news_grabber.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_tweet_similarity.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_tweet_similarity.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_twitter_post.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_twitter_post.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet_similarity.py" beforeDir="false" afterPath="$PROJECT_DIR$/twitter/tweet_similarity.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweets.py" beforeDir="false" afterPath="$PROJECT_DIR$/twitter/tweets.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter_api_auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/twitter/twitter_api_auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/twitter/tweet_similarity.py" beforeDir="false" afterPath="$PROJECT_DIR$/twitter/tweet_similarity.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +79,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for test_twitter_post.TwitterPostBotTestCases.test_get_latest_tweet_url">
+  <component name="RunManager" selected="Python.bot">
     <configuration name="bot" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="beehive" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -178,11 +164,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.bot" />
         <item itemvalue="Python tests.Unittests for test_twitter_post.TwitterPostBotTestCases.test_get_latest_tweet_url" />
         <item itemvalue="Python tests.Unittests for test_twitter_post.TwitterPostBotTestCases.test_get_tweets_list" />
         <item itemvalue="Python tests.Unittests for test_news_grabber.NewsGrabberTestCases.test_get_crypto_news" />
         <item itemvalue="Python tests.Unittests for test_news_grabber.NewsGrabberTestCases.test_get_crypto_tech_news" />
-        <item itemvalue="Python.bot" />
       </list>
     </recent_temporary>
   </component>
@@ -209,8 +195,18 @@
       <workItem from="1567334912664" duration="4038000" />
       <workItem from="1567347661955" duration="2225000" />
       <workItem from="1567354628762" duration="427000" />
-      <workItem from="1567773041632" duration="6477000" />
+      <workItem from="1567773041632" duration="7935000" />
+      <workItem from="1567783811592" duration="622000" />
+      <workItem from="1567840930169" duration="879000" />
     </task>
+    <task id="LOCAL-00001" summary="fix flask version">
+      <created>1567784551481</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1567784551481</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,14 +233,34 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/twitter/tweet_similarity.py</url>
-          <line>6</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/test/test_twitter_post.py</url>
           <line>52</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/bot.py</url>
+          <line>23</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/twitter/tweets.py</url>
+          <line>19</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/twitter/tweet_similarity.py</url>
+          <line>13</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/bot.py</url>
+          <line>37</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/twitter/tweet_similarity.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -254,7 +270,7 @@
     <SUITE FILE_PATH="coverage/beehive$Unittests_for_test_news_grabber_MyTestCase.coverage" NAME="Unittests for test_news_grabber.MyTestCase Coverage Results" MODIFIED="1566909234698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/news" />
     <SUITE FILE_PATH="coverage/beehive$Unittests_for_test_news_grabber_NewsGrabberTestCases_test_get_bitcoin_news.coverage" NAME="Unittests for test_news_grabber.NewsGrabberTestCases.test_get_bitcoin_news Coverage Results" MODIFIED="1567083978808" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/news" />
     <SUITE FILE_PATH="coverage/beehive$Unittests_for_test_tweet_similarity_MyTestCase_test_are_similar.coverage" NAME="Unittests for test_tweet_similarity.MyTestCase.test_are_similar Coverage Results" MODIFIED="1567338613891" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
-    <SUITE FILE_PATH="coverage/beehive$bot.coverage" NAME="bot Coverage Results" MODIFIED="1567339843794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/beehive$bot.coverage" NAME="bot Coverage Results" MODIFIED="1567841773166" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/beehive$Unittests_for_test_twitter_post_bot_TwitterPostBotTestCases_test_create_post.coverage" NAME="Unittests for test_twitter_post_bot.TwitterPostBotTestCases.test_create_post Coverage Results" MODIFIED="1566911716778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/twitter" />
     <SUITE FILE_PATH="coverage/beehive$Unittests_for_test_news_grabber_NewsGrabberTestCases.coverage" NAME="Unittests for test_news_grabber.NewsGrabberTestCases Coverage Results" MODIFIED="1567106874974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/beehive$Unittests_for_test_news_grabber_NewsGrabberTestCases_test_get_crypto_tech_news.coverage" NAME="Unittests for test_news_grabber.NewsGrabberTestCases.test_get_crypto_tech_news Coverage Results" MODIFIED="1567776454463" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
