@@ -3,13 +3,12 @@ import logging.config
 from twitter import tweet_similarity
 
 
-def create_post(text, source):
-    hashtags = '#cryptocurrencynews #cryptocurrency'
-    if len(text) >= 140:
-        sub_text = text[0:136] + '...'
-        return sub_text + '\n\n' + hashtags + '\n\n' + source
+def create_post(text, source, *hashtag):
+    if len(text) >= 170:
+        sub_text = text[0:166] + '...'
+        return sub_text + '\n\n' + hashtag + '\n\n' + source
     else:
-        return text + '\n\n' + hashtags + '\n\n' + source
+        return text + '\n\n' + hashtag + '\n\n' + source
 
 
 class TweetsHandler:
@@ -19,11 +18,10 @@ class TweetsHandler:
         self.api = tw_api
         self.me = self.api.me()
 
-        logging.config.fileConfig('logging.config')
-        self.logger = logging.getLogger('tw')
+        self.logger = logging.getLogger(__name__)
         self.logger.info('Initialized TweetsHandler')
 
-    def post_new_tweet(self, text, source):
+    def post_new_tweet(self, text, source, hashtag=None):
         """Tweet some news"""
         latest_tweets = self.get_tweets_list(100)
         if len(latest_tweets) > 0:
@@ -34,9 +32,10 @@ class TweetsHandler:
 
         try:
             self.logger.info('Posting a new tweet...')
-            return self.api.update_status(create_post(text, source))
+            return self.api.update_status(create_post(text, source, hashtag))
         except Exception as e:
             self.logger.error('Failed to post new tweet: %s', e, exc_info=1)
+            return None
 
     def get_latest_tweet(self):
         self.logger.info('Getting my last tweet...')

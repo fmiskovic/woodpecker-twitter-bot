@@ -15,7 +15,7 @@ class TwitterPostBotTestCases(unittest.TestCase):
     def test_create_post(self):
         source = "https://slashdot.org/story/19/05/19/1837257/bitcoin-roars-back-surges-50-in-30-days"
         text = "Bitcoin 'Roars Back', Surges 50% in 30 Days"
-        tweet = tweets.create_post(text, source)
+        tweet = tweets.create_post(text=text, source=source)
         print(tweet)
         self.assertIsNotNone(tweet)
 
@@ -23,7 +23,7 @@ class TwitterPostBotTestCases(unittest.TestCase):
         source = "https://slashdot.org/story/19/05/19/1837257/bitcoin-roars-back-surges-50-in-30-days"
         text = "Bitcoin 'Roars Back', Surges 50% in 30 Days"
 
-        response = self.post_bot.post_new_tweet(text, source)
+        response = self.post_bot.post_new_tweet(text=text, source=source)
         self.assertIsNotNone(response)
 
     def test_get_latest_tweet(self):
@@ -39,7 +39,7 @@ class TwitterPostBotTestCases(unittest.TestCase):
         text = tweet.text
 
         sub = text[0:text.find('\n\n')]
-        logger.info(f'Substring is: %s', sub)
+        print(f'Substring is: %s', sub)
         self.assertIsNotNone(sub)
         self.assertTrue(len(sub) > 0)
 

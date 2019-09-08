@@ -13,28 +13,28 @@ class NewsGrabberTestCases(unittest.TestCase):
         super().tearDown()
 
     def test_get_crypto_news(self):
-        news = self.grabber.get_news('cryptocurrency', category='business')
+        news = self.grabber.get_news(query='cryptocurrency', category='business')
         print('crypto')
         for n in news:
             print(n)
         self.assertTrue(len(news) > 0)
 
     def test_get_crypto_tech_news(self):
-        news = self.grabber.get_news('cryptocurrency', category='business')
+        news = self.grabber.get_news(query='cryptocurrency', category='business')
         print('crypto')
         for n in news:
             print(n)
         self.assertTrue(len(news) > 0)
 
     def test_get_bitcoin_news(self):
-        news = self.grabber.get_news('bitcoin')
+        news = self.grabber.get_news(query='bitcoin')
         print('bitcoin')
         for n in news:
             print(n)
         self.assertTrue(len(news) > 0)
 
     def test_get_news_non_existing(self):
-        news = self.grabber.get_news('fqwsdzx')
+        news = self.grabber.get_news(query='fqwsdzx')
         self.assertTrue(len(news) == 0)
 
 
