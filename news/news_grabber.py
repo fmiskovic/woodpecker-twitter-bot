@@ -1,14 +1,18 @@
+import logging.config
+
 from news.news_model import News
 
 
 class NewsGrabber:
     """Use this class to grab latest breaking news"""
 
-    def __init__(self, news_api, logger):
+    def __init__(self, news_api):
         """Init news api client"""
-        self.logger = logger
         self.news_api = news_api
-        logger.info('Initialized NewsApiClient...')
+
+        logging.config.fileConfig('logging.config')
+        self.logger = logging.getLogger('news')
+        self.logger.info('Initialized NewsApiClient')
 
     def get_news(self, query, category=None):
         """get latest breaking news"""

@@ -1,17 +1,13 @@
-import logging.config
 import unittest
 
 from twitter import tweets, twitter_api_auth
 from twitter.tweets import TweetsHandler
 
-logging.config.fileConfig('logging.config')
-logger = logging.getLogger('bot')
-
 
 class TwitterPostBotTestCases(unittest.TestCase):
     def setUp(self):
         api = twitter_api_auth.create_api()
-        self.post_bot = TweetsHandler(api, logging)
+        self.post_bot = TweetsHandler(api)
 
     def tearDown(self) -> None:
         super().tearDown()

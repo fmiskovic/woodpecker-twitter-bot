@@ -1,3 +1,5 @@
+import logging.config
+
 from twitter import tweet_similarity
 
 
@@ -13,11 +15,13 @@ def create_post(text, source):
 class TweetsHandler:
     """Use this class to handle or manage tweets"""
 
-    def __init__(self, tw_api, logger):
-        self.logger = logger
+    def __init__(self, tw_api):
         self.api = tw_api
         self.me = self.api.me()
-        logger.info('Initialized TweetsHandler')
+
+        logging.config.fileConfig('logging.config')
+        self.logger = logging.getLogger('tw')
+        self.logger.info('Initialized TweetsHandler')
 
     def post_new_tweet(self, text, source):
         """Tweet some news"""
