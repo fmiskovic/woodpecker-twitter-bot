@@ -1,13 +1,18 @@
+import logging.config
+
 import tweepy
 
 
 class FollowersHandler:
 
-    def __init__(self, tw_api, logger):
-        logger.info('Initializing FollowersHandler')
+    def __init__(self, tw_api):
+
         self.api = tw_api
         self.me = self.api.me()
-        self.logger = logger
+
+        logging.config.fileConfig('logging.config')
+        self.logger = logging.getLogger('tw')
+        self.logger.info('Initializing FollowersHandler')
 
     def follow_followers(self):
         self.logger.info("Retrieving and following followers")
