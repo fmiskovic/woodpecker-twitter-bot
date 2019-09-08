@@ -3,7 +3,7 @@ import logging.config
 from twitter import tweet_similarity
 
 
-def create_post(text, source, *hashtag):
+def create_post(text, source, hashtag='#cryptocurrency'):
     if len(text) >= 170:
         sub_text = text[0:166] + '...'
         return sub_text + '\n\n' + hashtag + '\n\n' + source
