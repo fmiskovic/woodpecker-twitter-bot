@@ -4,7 +4,7 @@ from twitter import tweet_similarity
 
 
 def create_post(text, source):
-    hashtags = '#cryptocurrencynews #cryptocurrency #bitcoin $BTC #BTC #LTC #ETH #XRP'
+    hashtags = '#cryptocurrencynews #cryptocurrency'
     if len(text) >= 140:
         sub_text = text[0:136] + '...'
         return sub_text + '\n\n' + hashtags + '\n\n' + source

@@ -4,7 +4,7 @@ import time
 from news import news_grabber, news_api_auth
 from twitter import followers, tweets, twitter_api_auth
 
-INTERVAL = 60 * 60  # sleep time interval is 5 minutes
+INTERVAL = 60 * 60  # sleep time interval is 60 minutes
 
 logging.config.fileConfig('logging.config')
 logger = logging.getLogger('bot')
