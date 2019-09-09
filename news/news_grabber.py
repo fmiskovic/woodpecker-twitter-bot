@@ -13,10 +13,10 @@ class NewsGrabber:
         self.logger = logging.getLogger(__name__)
         self.logger.info('Initialized NewsApiClient')
 
-    def get_news(self, query, category=None, country=None):
+    def get_news(self, query, category=None, country=None, language='en'):
         """get latest breaking news"""
         news = []
-        response = self.news_api.get_top_headlines(q=query, category=category, country=country, language='en')
+        response = self.news_api.get_top_headlines(q=query, category=category, country=country, language=language)
         if response['status'] == 'ok':
             self.logger.info('Querying news went ok')
             for article in response['articles']:

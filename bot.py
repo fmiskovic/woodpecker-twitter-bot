@@ -18,8 +18,8 @@ tw_handler = tweets.TweetsHandler(tw_api)
 followers_handler = followers.FollowersHandler(tw_api)
 
 
-def get_news(query=None, category='business', country=None):
-    return news_grabber.get_news(query=query, category=category, country=country)
+def get_news(query=None, category=None, country=None, language='en'):
+    return news_grabber.get_news(query=query, category=category, country=country, language=language)
 
 
 def tweet_news(news_items, hash_tag=None):
@@ -31,14 +31,14 @@ def tweet_news(news_items, hash_tag=None):
             logger.info('OK I am ready to continue. Lets tweet something again...')
 
 
-keywords = ['cryptocurrency', 'ethereum', 'bitcoin', 'cryptocoin', 'litecoin']
+keywords = ['cryptocurrency', 'ethereum', 'bitcoin', 'XRP', 'litecoin']
 
 while True:
     # follow new followers
-    followers_handler.follow_followers()
+    # followers_handler.follow_followers()
 
     keyword = random.choice(keywords)
-    news = get_news(query=keyword)
+    news = get_news(query=keyword, language='en')
     if len(news) > 0:
         logger.info('Tweet attempt about ' + keyword)
         tweet_news(news_items=news, hash_tag='#cryptocurrencynews #' + keyword)
