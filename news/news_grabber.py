@@ -16,7 +16,7 @@ class NewsGrabber:
     def get_news(self, query, category=None, country=None):
         """get latest breaking news"""
         news = []
-        response = self.news_api.get_top_headlines(query, category=category, country=country)
+        response = self.news_api.get_top_headlines(query=query, category=category, country=country, language='en')
         if response['status'] == 'ok':
             self.logger.info('Querying news went ok')
             for article in response['articles']:
