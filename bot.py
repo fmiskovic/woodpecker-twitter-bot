@@ -31,7 +31,7 @@ keywords = ['cryptocurrency', 'ethereum', 'bitcoin', 'XRP', 'litecoin']
 
 while True:
     # follow new followers
-    followers_handler.follow_followers()
+    # followers_handler.follow_followers()
 
     # choose random keyword
     keyword = random.choice(keywords)
@@ -42,8 +42,7 @@ while True:
         logger.info(f'I did not find any news for keyword %s', keyword)
         logger.info(f'Taking a %s minutes break...', SHORT_INTERVAL / 60)
         time.sleep(SHORT_INTERVAL)
-
-    if len(news) > 0:
+    else:
         logger.info('Tweet attempt about ' + keyword)
         hashtag = '#cryptocurrencynews #' + keyword
         for n in news:
