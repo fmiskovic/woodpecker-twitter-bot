@@ -21,6 +21,6 @@ class NewsGrabber:
             self.logger.info('Querying news went ok')
             for article in response['articles']:
                 news.append(News(article['author'], article['title'], article['description'], article['url'],
-                                 article['publishedAt']))
-        self.logger.info(f'Found {len(news)} news')
+                                 article['publishedAt'], query))
+        self.logger.info(f'Found {len(news)} news for query {query}')
         return news

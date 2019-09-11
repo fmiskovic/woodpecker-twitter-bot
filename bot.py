@@ -1,12 +1,12 @@
 import logging.config
-import random
 import time
 
 from news import news_grabber, news_api_auth
 from twitter import followers, tweets, twitter_api_auth
 
-LONG_INTERVAL = 60 * 60  # sleep time interval is 60 minutes
-SHORT_INTERVAL = 60 * 2  # sleep time interval is 2 minutes
+SLEEP_TIME = 60 * 60  # sleep time interval is 60 minutes
+
+keywords = ['cryptocurrency', 'ethereum', 'bitcoin', 'XRP', 'litecoin', 'blockchain']
 
 logging.config.fileConfig('logging.config')
 logger = logging.getLogger('bot')
@@ -27,27 +27,35 @@ def tweet_news(news_item, hash_tag=None):
     return tw_handler.post_new_tweet(text=news_item.description, source=news_item.url, hashtag=hash_tag)
 
 
-keywords = ['cryptocurrency', 'ethereum', 'bitcoin', 'XRP', 'litecoin']
+def collect_news():
+    top_news = []
+    for keyword in keywords:
+        k_news = get_news(query=keyword, language='en')
+        if len(k_news) > 0:
+            logger.info(f'Found %d news for keyword %s', len(k_news), keyword)
+            top_news = top_news + k_news
+        else:
+            logger.info(f'I did not find any news for keyword %s', keyword)
+    return top_news
+
 
 while True:
     # follow new followers
     # followers_handler.follow_followers()
 
-    # choose random keyword
-    keyword = random.choice(keywords)
-
-    news = get_news(query=keyword, language='en')
+    news = collect_news()
     if len(news) == 0:
-        # if there are no news, take a short break
-        logger.info(f'I did not find any news for keyword %s', keyword)
-        logger.info(f'Taking a %s minutes break...', SHORT_INTERVAL / 60)
-        time.sleep(SHORT_INTERVAL)
-    else:
-        logger.info('Tweet attempt about ' + keyword)
-        hashtag = '#cryptocurrencynews #' + keyword
-        for n in news:
-            result = tweet_news(news_item=n, hash_tag=hashtag)
-            if result is not None:
-                logging.info(f'Taking a %s minutes break...', LONG_INTERVAL / 60)
-                time.sleep(LONG_INTERVAL)
-                logger.info('OK I am ready to continue. Lets tweet something again...')
+        logger.info('There are no news at the moment')
+
+    for n in news:
+        hashtag = '#cryptocurrencynews #' + n.query
+        logger.info('Tweet attempt about ' + n.query)
+        result = tweet_news(news_item=n, hash_tag=hashtag)
+        if result is not None:
+            logging.info(f'Taking a %s minutes break...', SLEEP_TIME / 60)
+            time.sleep(SLEEP_TIME)
+            logger.info('OK I am ready to continue. Lets tweet something again...')
+
+    logger.info(f'Taking a %s minutes break...', SLEEP_TIME / 60)
+    time.sleep(SLEEP_TIME)
+    logger.info('OK I am ready to continue. Lets tweet something again...')
