@@ -21,7 +21,7 @@ followers_handler = followers.FollowersHandler(tw_api)
 # Initialize constants
 bot_config = BotConfig()
 bot_config.initialize()
-SLEEP_TIME = bot_config.get_property_value('BOT_SLEEP_TIME')
+SLEEP_TIME = int(bot_config.get_property_value('BOT_SLEEP_TIME'))
 COUNTRY = bot_config.get_property_value('BOT_COUNTRY')
 CATEGORY = bot_config.get_property_value('BOT_CATEGORY')
 LANGUAGE = bot_config.get_property_value('BOT_LANGUAGE')
