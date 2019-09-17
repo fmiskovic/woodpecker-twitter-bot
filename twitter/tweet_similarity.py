@@ -9,6 +9,10 @@ def are_similar(t1, t2):
 
 
 def are_similar_text(t1, t2):
-    # sub1 = t1[0:t1.find('\n\n')]
-    sub1 = t1[0:t1.find('http')]
-    return are_similar(sub1, t2)
+    sub = t1[0:t1.find('#')].rstrip()
+    return are_similar(sub, t2)
+
+
+def are_similar_source(s1, s2):
+    sub = s1[s1.find('http'):len(s1)].rstrip()
+    return sub == s2

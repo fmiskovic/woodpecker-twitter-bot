@@ -26,8 +26,11 @@ class TweetsHandler:
         latest_tweets = self.get_tweets_list(100)
         if len(latest_tweets) > 0:
             for t in latest_tweets:
-                if tweet_similarity.are_similar_text(t.text, text):
-                    self.logger.info('You already tweeted this. I do not want to tweet duplicate.')
+                if tweet_similarity.are_similar_source(t.text, source):
+                    self.logger.info('Found duplicated news by source. I do not want to tweet duplicate.')
+                    return None
+                elif tweet_similarity.are_similar_text(t.text, text):
+                    self.logger.info('Found duplicated news by text. I do not want to tweet duplicate.')
                     return None
 
         try:
