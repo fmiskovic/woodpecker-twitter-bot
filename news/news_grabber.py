@@ -23,6 +23,7 @@ class NewsGrabber:
                 source = article['source']
                 source_id = source['id']
                 if source_id in blacklist:
+                    # skip blacklisted sources
                     continue
                 news.append(News(article['author'], article['title'], article['description'], article['url'],
                                  article['publishedAt'], query))
