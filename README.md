@@ -43,3 +43,4 @@ which must be added to the following environment variables:
 
 `BOT_QUERIES` - specifies key words for searching the news at https://newsapi.org, for example: 'bitcoin'
 
+`BOT_BLACKLISTED_SOURCES` - specifies blacklist news sources that you don't want to consume
