@@ -62,7 +62,7 @@ def sleep():
 def main():
     while True:
         # follow back new followers
-        followers_handler.follow_followers()
+        # followers_handler.follow_followers()
 
         news = collect_news()
         if len(news) == 0:
