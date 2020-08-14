@@ -27,10 +27,11 @@ CATEGORY = bot_config.get_property_value('BOT_CATEGORY')
 LANGUAGE = bot_config.get_property_value('BOT_LANGUAGE')
 HASHTAG = bot_config.get_property_value('BOT_HASHTAG')
 KEYWORDS = bot_config.get_property_values('BOT_QUERIES')
+BL = bot_config.get_property_values('BOT_BLACKLISTED_SOURCES')
 
 
 def get_news(query=None, category=None, country=None, language='en'):
-    return news_grabber.get_news(query=query, category=category, country=country, language=language)
+    return news_grabber.get_news(query=query, category=category, country=country, language=language, blacklist=BL)
 
 
 def tweet_news(news_item, hash_tag=None):
@@ -60,8 +61,8 @@ def sleep():
 
 def main():
     while True:
-        # follow new followers
-        # followers_handler.follow_followers()
+        # follow back new followers
+        followers_handler.follow_followers()
 
         news = collect_news()
         if len(news) == 0:
