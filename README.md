@@ -58,7 +58,7 @@ Open terminal and run:
 
 `python3 bot.py`
 
-That is it. Do not hesitate to contact me if you need my support.
+That is it. If you need my support, do not hesitate to contact me via email fmiskovic@yandex.com.
 
 If you like this idea, consider becoming a patreon:
 https://www.patreon.com/filthygoat
