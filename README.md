@@ -2,15 +2,15 @@
 
 ### GENERAL
 
-This Twitter bot is designed to consume specific top-headlines from https://newsapi.org and to post it periodically on Twitter.
-The bot itself is vary configurable. Parameters like posting time period, language of the post, topic etc, can be configured via environment variables which I am describing bellow.
+This Twitter bot is designed to consume specific top-headlines from https://newsapi.org and to post them periodically on Twitter.
+The bot itself is very configurable. Parameters like posting time period, language of the post, topic etc. can be configured via environment variables described bellow.
 
 The showcase example can be found here:
 https://twitter.com/crypto_topics
 
 ### PRE-CONDITION
-I recomend you to setup and install this bot in [Heroku](https://heroku.com/) like I did, but of course you can do it on Google Cloud or AWS.
-In case you want to test it or just run it localy or in your personal evironment, [python3.7.*](https://realpython.com/installing-python/) and [PIP](https://pip.pypa.io/en/stable/installing/) must be installed.
+I recommend you to setup and install this bot in [Heroku](https://heroku.com/) like I did it, but of course you can do it on Google Cloud or AWS.
+In case you want to test it or just run it locally or in your personal evironment, [python3.7.*](https://realpython.com/installing-python/) and [PIP](https://pip.pypa.io/en/stable/installing/) must be installed.
 
 ### BOT INSTALLATION
 
@@ -36,7 +36,7 @@ which must be added to the following environment variables:
 
 `ACCESS_SECRET`
 
-##### [BOT] (this is optional, if not specified, check config.ini file to see default values):
+##### [BOT] (this is optional; if not specified, check config.ini file to see the default values):
 
 `BOT_SLEEP_TIME` - specifies how for long the bot will be inactive in seconds - default value is 7200.
 
@@ -50,7 +50,7 @@ which must be added to the following environment variables:
 
 `BOT_QUERIES` - specifies key words for searching the news, for example: `bitcoin`, `basketball`, `kardashian` or anything else.
 
-`BOT_BLACKLISTED_SOURCES` - specifies blacklist news sources that you don't want to consume.
+`BOT_BLACKLISTED_SOURCES` - specifies blacklisted news sources that you don't want to consume.
 
 For more details check: https://newsapi.org/docs/endpoints/top-headlines
 
@@ -60,7 +60,7 @@ Open terminal and run:
 
 `python3 bot.py`
 
-That is it. If you need my support, do not hesitate to contact me via email fmiskovic@yandex.com.
+That is it. If you need my support, do not hesitate to contact me via fmiskovic@yandex.com.
 
 If you like this idea, consider becoming a patreon:
 https://www.patreon.com/filthygoat
