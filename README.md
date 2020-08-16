@@ -61,6 +61,6 @@ Open terminal and run:
 That is it. Do not hesitate to contact me if you need my support.
 
 If you like this idea, consider becoming a patreon:
-[https://www.patreon.com/filthygoat]
+https://www.patreon.com/filthygoat
 
 Thank you for supporting!
