@@ -3,6 +3,14 @@ import logging.config
 from news.news_model import News
 
 
+def is_blank(text):
+    if text and text.strip():
+        # text is not None AND text is not empty or blank
+        return False
+    # text is None OR text is empty or blank
+    return True
+
+
 class NewsGrabber:
     """Use this class to grab latest breaking news"""
 
@@ -22,7 +30,7 @@ class NewsGrabber:
             for article in response['articles']:
                 source = article['source']
                 source_id = source['id']
-                if source_id in blacklist:
+                if source_id in blacklist or is_blank(article['description']):
                     # skip blacklisted sources
                     continue
                 news.append(News(article['author'], article['title'], article['description'], article['url'],

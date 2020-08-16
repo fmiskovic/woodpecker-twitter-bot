@@ -23,7 +23,7 @@ class TweetsHandler:
 
     def post_new_tweet(self, text, source, hashtag=None):
         """Tweet some news"""
-        latest_tweets = self.get_tweets_list(100)
+        latest_tweets = self.get_tweets_list(20)
         if len(latest_tweets) > 0:
             for t in latest_tweets:
                 if tweet_similarity.are_similar_source(t.text, source):
