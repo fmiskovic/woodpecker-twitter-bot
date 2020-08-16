@@ -38,19 +38,21 @@ which must be added to the following environment variables:
 
 ##### [BOT] (this is optional, if not specified, check config.ini file to see default values):
 
-`BOT_SLEEP_TIME` - specifies how for long the bot will be inactive in seconds
+`BOT_SLEEP_TIME` - specifies how for long the bot will be inactive in seconds - default value is 7200.
 
-`BOT_COUNTRY` - specifies country of the news source
+`BOT_COUNTRY` - specifies country of the news source, for example: `us`, `pl`, `gb` etc.
 
-`BOT_CATEGORY` - specifies category of the news source
+`BOT_CATEGORY` - specifies category of the news source, examples: `entertainment`, `sports`, `health`, `technology` etc.
 
-`BOT_LANGUAGE` - specifies language of the news source, for example: 'bitcoin'
+`BOT_LANGUAGE` - specifies language of the news source, default is: `en`.
 
-`BOT_HASHTAG` - specifies which hashtags to add in a twitter post
+`BOT_HASHTAG` - specifies which hashtags to add in a twitter post, default is `#cryptocurrencynews`.
 
-`BOT_QUERIES` - specifies key words for searching the news at https://newsapi.org, for example: 'bitcoin'
+`BOT_QUERIES` - specifies key words for searching the news, for example: `bitcoin`, `basketball`, `kardashian` or anything else.
 
-`BOT_BLACKLISTED_SOURCES` - specifies blacklist news sources that you don't want to consume
+`BOT_BLACKLISTED_SOURCES` - specifies blacklist news sources that you don't want to consume.
+
+For more details check: https://newsapi.org/docs/endpoints/top-headlines
 
 ### RUNNING THE BOT
 
