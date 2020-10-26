@@ -61,8 +61,3 @@ Open terminal and run:
 `python3 bot.py`
 
 That is it. If you need my support, do not hesitate to contact me via fmiskovic@yandex.com.
-
-If you like this idea, consider becoming a patreon:
-https://www.patreon.com/filthygoat
-
-Thank you for supporting!
